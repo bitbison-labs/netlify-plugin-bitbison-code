@@ -1,0 +1,25 @@
+{
+  "name": "netlify-plugin-bitbison-code",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bitbison Code on Netlify: where a build's dependency changes stand, in the deploy summary.",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "model.js",
+    "manifest.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "bitbison"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  }
+}

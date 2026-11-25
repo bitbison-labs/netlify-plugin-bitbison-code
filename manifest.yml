@@ -1,0 +1,17 @@
+name: netlify-plugin-bitbison-code
+inputs:
+  - name: org
+    description: "The organization's id on its Bitbison deployment, whose channel the client is fetched from."
+    required: true
+  - name: url
+    description: "The Bitbison deployment's address, such as https://acme.cloud.bitbison.io."
+    required: true
+  - name: target
+    description: "The branch a deploy preview's pull request merges into; Netlify does not name it."
+    default: main
+  - name: request
+    description: "Run the full check, asking for grants and Bitbison reviews, where no other CI runs bitbison ci. Read-only otherwise."
+    default: false
+  - name: fail_on
+    description: "When a dependency result fails the deploy: never, denied (a change the organization said no to) or uncovered (any change no grant covers)."
+    default: never
